@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		680978D21F22160500B058B9 /* QQ5Resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6818A8D81F2087320088D0E4 /* QQ5Resource.bundle */; };
+		6818A8811F2086EA0088D0E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6818A8801F2086EA0088D0E4 /* main.m */; };
+		6818A8841F2086EA0088D0E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6818A8831F2086EA0088D0E4 /* AppDelegate.m */; };
+		6818A8871F2086EA0088D0E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6818A8861F2086EA0088D0E4 /* ViewController.m */; };
+		6818A88A1F2086EA0088D0E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6818A8881F2086EA0088D0E4 /* Main.storyboard */; };
+		6818A88C1F2086EA0088D0E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6818A88B1F2086EA0088D0E4 /* Assets.xcassets */; };
+		6818A88F1F2086EA0088D0E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6818A88D1F2086EA0088D0E4 /* LaunchScreen.storyboard */; };
+		6818A8D91F2087320088D0E4 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6818A8991F2087320088D0E4 /* AFHTTPSessionManager.m */; };
+		6818A8DA1F2087320088D0E4 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6818A89C1F2087320088D0E4 /* AFNetworkReachabilityManager.m */; };
+		6818A8DB1F2087320088D0E4 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6818A89E1F2087320088D0E4 /* AFSecurityPolicy.m */; };
+		6818A8DC1F2087320088D0E4 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 6818A8A01F2087320088D0E4 /* AFURLRequestSerialization.m */; };
+		6818A8DD1F2087320088D0E4 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 6818A8A21F2087320088D0E4 /* AFURLResponseSerialization.m */; };
+		6818A8DE1F2087320088D0E4 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6818A8A41F2087320088D0E4 /* AFURLSessionManager.m */; };
+		6818A8DF1F2087320088D0E4 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6818A8A71F2087320088D0E4 /* MASCompositeConstraint.m */; };
+		6818A8E01F2087320088D0E4 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6818A8AA1F2087320088D0E4 /* MASConstraint.m */; };
+		6818A8E11F2087320088D0E4 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6818A8AC1F2087320088D0E4 /* MASConstraintMaker.m */; };
+		6818A8E21F2087320088D0E4 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6818A8AE1F2087320088D0E4 /* MASLayoutConstraint.m */; };
+		6818A8E31F2087320088D0E4 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 6818A8B21F2087320088D0E4 /* MASViewAttribute.m */; };
+		6818A8E41F2087320088D0E4 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6818A8B41F2087320088D0E4 /* MASViewConstraint.m */; };
+		6818A8E51F2087320088D0E4 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6818A8B61F2087320088D0E4 /* NSArray+MASAdditions.m */; };
+		6818A8E61F2087320088D0E4 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6818A8B91F2087320088D0E4 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		6818A8E71F2087320088D0E4 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6818A8BB1F2087320088D0E4 /* View+MASAdditions.m */; };
+		6818A8E81F2087320088D0E4 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6818A8BE1F2087320088D0E4 /* ViewController+MASAdditions.m */; };
+		6818A8F11F2087320088D0E4 /* libQQ5SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6818A8D71F2087320088D0E4 /* libQQ5SDK.a */; };
+		6818A8F51F2087B60088D0E4 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6818A8F41F2087B60088D0E4 /* libc++.tbd */; };
+		6818A8F71F2087BF0088D0E4 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6818A8F61F2087BF0088D0E4 /* libsqlite3.tbd */; };
+		6818A8F91F2087C70088D0E4 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6818A8F81F2087C70088D0E4 /* libz.tbd */; };
+		6818A8FB1F2088000088D0E4 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6818A8FA1F2088000088D0E4 /* CoreMotion.framework */; };
+		6818A8FD1F20880E0088D0E4 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6818A8FC1F20880E0088D0E4 /* CoreTelephony.framework */; };
+		6846597D1F25D3E000AB5545 /* libJNetSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 684659721F25D3E000AB5545 /* libJNetSdk.a */; };
+		6846597E1F25D3E000AB5545 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 684659751F25D3E000AB5545 /* AlipaySDK.bundle */; };
+		6846597F1F25D3E000AB5545 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684659761F25D3E000AB5545 /* AlipaySDK.framework */; };
+		684659801F25D3E000AB5545 /* libJNetAliAdapter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 684659771F25D3E000AB5545 /* libJNetAliAdapter.a */; };
+		684659811F25D3E000AB5545 /* libJNetWXAdapter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 684659791F25D3E000AB5545 /* libJNetWXAdapter.a */; };
+		684659821F25D3E000AB5545 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6846597A1F25D3E000AB5545 /* libWeChatSDK.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6818A87C1F2086EA0088D0E4 /* QQ5SDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QQ5SDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6818A8801F2086EA0088D0E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6818A8821F2086EA0088D0E4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6818A8831F2086EA0088D0E4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6818A8851F2086EA0088D0E4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6818A8861F2086EA0088D0E4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6818A8891F2086EA0088D0E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6818A88B1F2086EA0088D0E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6818A88E1F2086EA0088D0E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6818A8901F2086EA0088D0E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6818A8981F2087320088D0E4 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		6818A8991F2087320088D0E4 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		6818A89A1F2087320088D0E4 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		6818A89B1F2087320088D0E4 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		6818A89C1F2087320088D0E4 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		6818A89D1F2087320088D0E4 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		6818A89E1F2087320088D0E4 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		6818A89F1F2087320088D0E4 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		6818A8A01F2087320088D0E4 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		6818A8A11F2087320088D0E4 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		6818A8A21F2087320088D0E4 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		6818A8A31F2087320088D0E4 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		6818A8A41F2087320088D0E4 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		6818A8A61F2087320088D0E4 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		6818A8A71F2087320088D0E4 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		6818A8A81F2087320088D0E4 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		6818A8A91F2087320088D0E4 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		6818A8AA1F2087320088D0E4 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		6818A8AB1F2087320088D0E4 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		6818A8AC1F2087320088D0E4 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		6818A8AD1F2087320088D0E4 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		6818A8AE1F2087320088D0E4 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		6818A8AF1F2087320088D0E4 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		6818A8B01F2087320088D0E4 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		6818A8B11F2087320088D0E4 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		6818A8B21F2087320088D0E4 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		6818A8B31F2087320088D0E4 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		6818A8B41F2087320088D0E4 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		6818A8B51F2087320088D0E4 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		6818A8B61F2087320088D0E4 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		6818A8B71F2087320088D0E4 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		6818A8B81F2087320088D0E4 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		6818A8B91F2087320088D0E4 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		6818A8BA1F2087320088D0E4 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		6818A8BB1F2087320088D0E4 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		6818A8BC1F2087320088D0E4 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		6818A8BD1F2087320088D0E4 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		6818A8BE1F2087320088D0E4 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		6818A8D61F2087320088D0E4 /* QQ5SDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQ5SDK.h; sourceTree = "<group>"; };
+		6818A8D71F2087320088D0E4 /* libQQ5SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libQQ5SDK.a; sourceTree = "<group>"; };
+		6818A8D81F2087320088D0E4 /* QQ5Resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = QQ5Resource.bundle; sourceTree = "<group>"; };
+		6818A8F41F2087B60088D0E4 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		6818A8F61F2087BF0088D0E4 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		6818A8F81F2087C70088D0E4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		6818A8FA1F2088000088D0E4 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		6818A8FC1F20880E0088D0E4 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		6846596F1F25D3E000AB5545 /* JNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNetManager.h; sourceTree = "<group>"; };
+		684659701F25D3E000AB5545 /* JNetRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNetRequest.h; sourceTree = "<group>"; };
+		684659711F25D3E000AB5545 /* JNetResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNetResponse.h; sourceTree = "<group>"; };
+		684659721F25D3E000AB5545 /* libJNetSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libJNetSdk.a; sourceTree = "<group>"; };
+		684659751F25D3E000AB5545 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		684659761F25D3E000AB5545 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		684659771F25D3E000AB5545 /* libJNetAliAdapter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libJNetAliAdapter.a; sourceTree = "<group>"; };
+		684659791F25D3E000AB5545 /* libJNetWXAdapter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libJNetWXAdapter.a; sourceTree = "<group>"; };
+		6846597A1F25D3E000AB5545 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		6846597B1F25D3E000AB5545 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		6846597C1F25D3E000AB5545 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6818A8791F2086EA0088D0E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6818A8FD1F20880E0088D0E4 /* CoreTelephony.framework in Frameworks */,
+				684659811F25D3E000AB5545 /* libJNetWXAdapter.a in Frameworks */,
+				6846597F1F25D3E000AB5545 /* AlipaySDK.framework in Frameworks */,
+				6818A8FB1F2088000088D0E4 /* CoreMotion.framework in Frameworks */,
+				6846597D1F25D3E000AB5545 /* libJNetSdk.a in Frameworks */,
+				684659821F25D3E000AB5545 /* libWeChatSDK.a in Frameworks */,
+				6818A8F91F2087C70088D0E4 /* libz.tbd in Frameworks */,
+				684659801F25D3E000AB5545 /* libJNetAliAdapter.a in Frameworks */,
+				6818A8F71F2087BF0088D0E4 /* libsqlite3.tbd in Frameworks */,
+				6818A8F51F2087B60088D0E4 /* libc++.tbd in Frameworks */,
+				6818A8F11F2087320088D0E4 /* libQQ5SDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6818A8731F2086E90088D0E4 = {
+			isa = PBXGroup;
+			children = (
+				6818A87E1F2086EA0088D0E4 /* QQ5SDKDemo */,
+				6818A87D1F2086EA0088D0E4 /* Products */,
+				6818A8F31F2087B60088D0E4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6818A87D1F2086EA0088D0E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6818A87C1F2086EA0088D0E4 /* QQ5SDKDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6818A87E1F2086EA0088D0E4 /* QQ5SDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6818A8961F2087320088D0E4 /* Lib */,
+				6818A8D31F2087320088D0E4 /* SDK */,
+				6818A8821F2086EA0088D0E4 /* AppDelegate.h */,
+				6818A8831F2086EA0088D0E4 /* AppDelegate.m */,
+				6818A8851F2086EA0088D0E4 /* ViewController.h */,
+				6818A8861F2086EA0088D0E4 /* ViewController.m */,
+				6818A8881F2086EA0088D0E4 /* Main.storyboard */,
+				6818A88B1F2086EA0088D0E4 /* Assets.xcassets */,
+				6818A88D1F2086EA0088D0E4 /* LaunchScreen.storyboard */,
+				6818A8901F2086EA0088D0E4 /* Info.plist */,
+				6818A87F1F2086EA0088D0E4 /* Supporting Files */,
+			);
+			path = QQ5SDKDemo;
+			sourceTree = "<group>";
+		};
+		6818A87F1F2086EA0088D0E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6818A8801F2086EA0088D0E4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6818A8961F2087320088D0E4 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				6846596E1F25D3E000AB5545 /* PaySdk */,
+				6818A8971F2087320088D0E4 /* AFNetworking */,
+				6818A8A51F2087320088D0E4 /* Masonry */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		6818A8971F2087320088D0E4 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				6818A8981F2087320088D0E4 /* AFHTTPSessionManager.h */,
+				6818A8991F2087320088D0E4 /* AFHTTPSessionManager.m */,
+				6818A89A1F2087320088D0E4 /* AFNetworking.h */,
+				6818A89B1F2087320088D0E4 /* AFNetworkReachabilityManager.h */,
+				6818A89C1F2087320088D0E4 /* AFNetworkReachabilityManager.m */,
+				6818A89D1F2087320088D0E4 /* AFSecurityPolicy.h */,
+				6818A89E1F2087320088D0E4 /* AFSecurityPolicy.m */,
+				6818A89F1F2087320088D0E4 /* AFURLRequestSerialization.h */,
+				6818A8A01F2087320088D0E4 /* AFURLRequestSerialization.m */,
+				6818A8A11F2087320088D0E4 /* AFURLResponseSerialization.h */,
+				6818A8A21F2087320088D0E4 /* AFURLResponseSerialization.m */,
+				6818A8A31F2087320088D0E4 /* AFURLSessionManager.h */,
+				6818A8A41F2087320088D0E4 /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		6818A8A51F2087320088D0E4 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				6818A8A61F2087320088D0E4 /* MASCompositeConstraint.h */,
+				6818A8A71F2087320088D0E4 /* MASCompositeConstraint.m */,
+				6818A8A81F2087320088D0E4 /* MASConstraint+Private.h */,
+				6818A8A91F2087320088D0E4 /* MASConstraint.h */,
+				6818A8AA1F2087320088D0E4 /* MASConstraint.m */,
+				6818A8AB1F2087320088D0E4 /* MASConstraintMaker.h */,
+				6818A8AC1F2087320088D0E4 /* MASConstraintMaker.m */,
+				6818A8AD1F2087320088D0E4 /* MASLayoutConstraint.h */,
+				6818A8AE1F2087320088D0E4 /* MASLayoutConstraint.m */,
+				6818A8AF1F2087320088D0E4 /* Masonry.h */,
+				6818A8B01F2087320088D0E4 /* MASUtilities.h */,
+				6818A8B11F2087320088D0E4 /* MASViewAttribute.h */,
+				6818A8B21F2087320088D0E4 /* MASViewAttribute.m */,
+				6818A8B31F2087320088D0E4 /* MASViewConstraint.h */,
+				6818A8B41F2087320088D0E4 /* MASViewConstraint.m */,
+				6818A8B51F2087320088D0E4 /* NSArray+MASAdditions.h */,
+				6818A8B61F2087320088D0E4 /* NSArray+MASAdditions.m */,
+				6818A8B71F2087320088D0E4 /* NSArray+MASShorthandAdditions.h */,
+				6818A8B81F2087320088D0E4 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				6818A8B91F2087320088D0E4 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				6818A8BA1F2087320088D0E4 /* View+MASAdditions.h */,
+				6818A8BB1F2087320088D0E4 /* View+MASAdditions.m */,
+				6818A8BC1F2087320088D0E4 /* View+MASShorthandAdditions.h */,
+				6818A8BD1F2087320088D0E4 /* ViewController+MASAdditions.h */,
+				6818A8BE1F2087320088D0E4 /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		6818A8D31F2087320088D0E4 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				6818A8D41F2087320088D0E4 /* include */,
+				6818A8D71F2087320088D0E4 /* libQQ5SDK.a */,
+				6818A8D81F2087320088D0E4 /* QQ5Resource.bundle */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		6818A8D41F2087320088D0E4 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				6818A8D51F2087320088D0E4 /* QQ5SDK */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		6818A8D51F2087320088D0E4 /* QQ5SDK */ = {
+			isa = PBXGroup;
+			children = (
+				6818A8D61F2087320088D0E4 /* QQ5SDK.h */,
+			);
+			path = QQ5SDK;
+			sourceTree = "<group>";
+		};
+		6818A8F31F2087B60088D0E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6818A8FC1F20880E0088D0E4 /* CoreTelephony.framework */,
+				6818A8FA1F2088000088D0E4 /* CoreMotion.framework */,
+				6818A8F81F2087C70088D0E4 /* libz.tbd */,
+				6818A8F61F2087BF0088D0E4 /* libsqlite3.tbd */,
+				6818A8F41F2087B60088D0E4 /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6846596E1F25D3E000AB5545 /* PaySdk */ = {
+			isa = PBXGroup;
+			children = (
+				6846596F1F25D3E000AB5545 /* JNetManager.h */,
+				684659701F25D3E000AB5545 /* JNetRequest.h */,
+				684659711F25D3E000AB5545 /* JNetResponse.h */,
+				684659721F25D3E000AB5545 /* libJNetSdk.a */,
+				684659731F25D3E000AB5545 /* Librarys */,
+			);
+			path = PaySdk;
+			sourceTree = "<group>";
+		};
+		684659731F25D3E000AB5545 /* Librarys */ = {
+			isa = PBXGroup;
+			children = (
+				684659741F25D3E000AB5545 /* AliPaySDK */,
+				684659781F25D3E000AB5545 /* WXSDK */,
+			);
+			path = Librarys;
+			sourceTree = "<group>";
+		};
+		684659741F25D3E000AB5545 /* AliPaySDK */ = {
+			isa = PBXGroup;
+			children = (
+				684659751F25D3E000AB5545 /* AlipaySDK.bundle */,
+				684659761F25D3E000AB5545 /* AlipaySDK.framework */,
+				684659771F25D3E000AB5545 /* libJNetAliAdapter.a */,
+			);
+			path = AliPaySDK;
+			sourceTree = "<group>";
+		};
+		684659781F25D3E000AB5545 /* WXSDK */ = {
+			isa = PBXGroup;
+			children = (
+				684659791F25D3E000AB5545 /* libJNetWXAdapter.a */,
+				6846597A1F25D3E000AB5545 /* libWeChatSDK.a */,
+				6846597B1F25D3E000AB5545 /* WXApi.h */,
+				6846597C1F25D3E000AB5545 /* WXApiObject.h */,
+			);
+			path = WXSDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6818A87B1F2086EA0088D0E4 /* QQ5SDKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6818A8931F2086EA0088D0E4 /* Build configuration list for PBXNativeTarget "QQ5SDKDemo" */;
+			buildPhases = (
+				6818A8781F2086EA0088D0E4 /* Sources */,
+				6818A8791F2086EA0088D0E4 /* Frameworks */,
+				6818A87A1F2086EA0088D0E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QQ5SDKDemo;
+			productName = QQ5SDKDemo;
+			productReference = 6818A87C1F2086EA0088D0E4 /* QQ5SDKDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6818A8741F2086E90088D0E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = meiyx;
+				TargetAttributes = {
+					6818A87B1F2086EA0088D0E4 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = VQ4DAAC5GK;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6818A8771F2086E90088D0E4 /* Build configuration list for PBXProject "QQ5SDKDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6818A8731F2086E90088D0E4;
+			productRefGroup = 6818A87D1F2086EA0088D0E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6818A87B1F2086EA0088D0E4 /* QQ5SDKDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6818A87A1F2086EA0088D0E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6846597E1F25D3E000AB5545 /* AlipaySDK.bundle in Resources */,
+				680978D21F22160500B058B9 /* QQ5Resource.bundle in Resources */,
+				6818A88F1F2086EA0088D0E4 /* LaunchScreen.storyboard in Resources */,
+				6818A88C1F2086EA0088D0E4 /* Assets.xcassets in Resources */,
+				6818A88A1F2086EA0088D0E4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6818A8781F2086EA0088D0E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6818A8E41F2087320088D0E4 /* MASViewConstraint.m in Sources */,
+				6818A8DE1F2087320088D0E4 /* AFURLSessionManager.m in Sources */,
+				6818A8E31F2087320088D0E4 /* MASViewAttribute.m in Sources */,
+				6818A8871F2086EA0088D0E4 /* ViewController.m in Sources */,
+				6818A8841F2086EA0088D0E4 /* AppDelegate.m in Sources */,
+				6818A8DA1F2087320088D0E4 /* AFNetworkReachabilityManager.m in Sources */,
+				6818A8DF1F2087320088D0E4 /* MASCompositeConstraint.m in Sources */,
+				6818A8E11F2087320088D0E4 /* MASConstraintMaker.m in Sources */,
+				6818A8E71F2087320088D0E4 /* View+MASAdditions.m in Sources */,
+				6818A8E21F2087320088D0E4 /* MASLayoutConstraint.m in Sources */,
+				6818A8E81F2087320088D0E4 /* ViewController+MASAdditions.m in Sources */,
+				6818A8E01F2087320088D0E4 /* MASConstraint.m in Sources */,
+				6818A8811F2086EA0088D0E4 /* main.m in Sources */,
+				6818A8DB1F2087320088D0E4 /* AFSecurityPolicy.m in Sources */,
+				6818A8E51F2087320088D0E4 /* NSArray+MASAdditions.m in Sources */,
+				6818A8E61F2087320088D0E4 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				6818A8DC1F2087320088D0E4 /* AFURLRequestSerialization.m in Sources */,
+				6818A8DD1F2087320088D0E4 /* AFURLResponseSerialization.m in Sources */,
+				6818A8D91F2087320088D0E4 /* AFHTTPSessionManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6818A8881F2086EA0088D0E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6818A8891F2086EA0088D0E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6818A88D1F2086EA0088D0E4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6818A88E1F2086EA0088D0E4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6818A8911F2086EA0088D0E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6818A8921F2086EA0088D0E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6818A8941F2086EA0088D0E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VQ4DAAC5GK;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QQ5SDKDemo/Lib/PaySdk/Librarys/AliPaySDK",
+				);
+				INFOPLIST_FILE = QQ5SDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QQ5SDKDemo/Lib/PaySdk",
+					"$(PROJECT_DIR)/QQ5SDKDemo/Lib/PaySdk/Librarys/AliPaySDK",
+					"$(PROJECT_DIR)/QQ5SDKDemo/Lib/PaySdk/Librarys/WXSDK",
+					"$(PROJECT_DIR)/QQ5SDKDemo/SDK",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qq5SDK.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6818A8951F2086EA0088D0E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VQ4DAAC5GK;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QQ5SDKDemo/Lib/PaySdk/Librarys/AliPaySDK",
+				);
+				INFOPLIST_FILE = QQ5SDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QQ5SDKDemo/Lib/PaySdk",
+					"$(PROJECT_DIR)/QQ5SDKDemo/Lib/PaySdk/Librarys/AliPaySDK",
+					"$(PROJECT_DIR)/QQ5SDKDemo/Lib/PaySdk/Librarys/WXSDK",
+					"$(PROJECT_DIR)/QQ5SDKDemo/SDK",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qq5SDK.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6818A8771F2086E90088D0E4 /* Build configuration list for PBXProject "QQ5SDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6818A8911F2086EA0088D0E4 /* Debug */,
+				6818A8921F2086EA0088D0E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6818A8931F2086EA0088D0E4 /* Build configuration list for PBXNativeTarget "QQ5SDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6818A8941F2086EA0088D0E4 /* Debug */,
+				6818A8951F2086EA0088D0E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6818A8741F2086E90088D0E4 /* Project object */;
+}
