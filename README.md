@@ -1,44 +1,44 @@
 # qq5_game_skd_iOS
-一.配置要求
-支持iOS8.0及以上版本
-二.开发环境搭建
-1.build Setting设置
-1.1、Bitcode设置 不支持Bitcode,在工程中将Enable Bitcode 设为 No.
+一.配置要求<br>
+支持iOS8.0及以上版本<br>
+二.开发环境搭建<br>
+1.build Setting设置<br>
+1.1、Bitcode设置 不支持Bitcode,在工程中将Enable Bitcode 设为 No.<br>
 
-1.2 设置Other Linker Flags
-支付SDK中有使用到Category，所以请在工程中设置Other Linker Flags包含-ObjC，否则会造成运行时无法加载Category中方法的崩溃问题.
-
-
+1.2 设置Other Linker Flags<br>
+支付SDK中有使用到Category，所以请在工程中设置Other Linker Flags包含-ObjC，否则会造成运行时无法加载Category中方法的崩溃问题.<br>
 
 
-1.3 info设置
-1.3.1、相册权限设置
-1.3.2、支付相关设置
-a.配置支付相关的 URLTypes
 
 
-b.添加支付相关的白名单
-
-<key>LSApplicationQueriesSchemes</key>
-<array>
-    <string>alipayqr</string>
-    <string>alipay</string>
-    <string>alipayshare</string>
-    <string>alipays</string>
-    <string>weixin</string>
-    <string>wechat</string>
-</array>
+1.3 info设置<br>
+1.3.1、相册权限设置<br>
+1.3.2、支付相关设置<br>
+a.配置支付相关的 URLTypes<br>
 
 
+b.添加支付相关的白名单<br>
+
+<key>LSApplicationQueriesSchemes</key><br>
+<array><br>
+    <string>alipayqr</string><br>
+    <string>alipay</string><br>
+    <string>alipayshare</string><br>
+    <string>alipays</string><br>
+    <string>weixin</string><br>
+    <string>wechat</string><br>
+</array><br>
 
 
 
 
 
 
-1.3.3 、添加SDK文件
-a、添加QQ5SDK和第三方文件
-添加SDK和Lib下所有文件
+
+
+1.3.3 、添加SDK文件<br>
+a、添加QQ5SDK和第三方文件<br>
+添加SDK和Lib下所有文件<br>
 b、添加依赖的系统库
 CoreTelephony.framework、CoreMotion.framework、libz.tbd、libsqlite3.tbd、libc++.tbd、
 
