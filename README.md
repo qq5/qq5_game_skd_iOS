@@ -32,12 +32,12 @@ b.添加支付相关的白名单<br>
 
 \<key\>LSApplicationQueriesSchemes\<\/key\>
 >\<array\><br>
-   >>> \<string\>alipayqr\<\/string\><br>
-   >>> \<string\>alipay\<\/string\><br>
-   >>> \<string\>alipayshare\<\/string\><br>
-   >>> \<string\>alipays\<\/string\><br>
-   >>> \<string\>weixin\<\/string\><br>
-   >>> \<string\>wechat\<\/string\><br>
+    \<string\>alipayqr\<\/string\><br>
+    \<string\>alipay\<\/string\><br>
+    \<string\>alipayshare\<\/string\><br>
+    \<string\>alipays\<\/string\><br>
+    \<string\>weixin\<\/string\><br>
+    \<string\>wechat\<\/string\><br>
 >\<\/array\><br>
 <br>
 <br>
