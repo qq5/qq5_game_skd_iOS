@@ -13,18 +13,14 @@
 
 ### 1.3 info设置
 #### 1.3.1、相册权限设置
-
 ![](https://github.com/qq5/qq5_game_skd_iOS/blob/master/images/相册权限.png)
 
 #### 1.3.2、支付相关设置
 ##### a.配置支付相关的 URLTypes
-<br>
-<br>
 ![](https://github.com/qq5/qq5_game_skd_iOS/blob/master/images/pay.png)
-<br>
-<br>
-b.添加支付相关的白名单<br>
-```<key>LSApplicationQueriesSchemes</key>
+#### b.添加支付相关的白名单
+```
+<key>LSApplicationQueriesSchemes</key>
 <array>
     <string>alipayqr</string>
     <string>alipay</string>
@@ -32,8 +28,8 @@ b.添加支付相关的白名单<br>
     <string>alipays</string>
     <string>weixin</string>
     <string>wechat</string>
-</array>```
-
+</array>
+```
 ![](https://github.com/qq5/qq5_game_skd_iOS/blob/master/images/白名单.png)
 
 1.3.3 、添加SDK文件<br>
