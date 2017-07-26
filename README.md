@@ -31,7 +31,7 @@ a.配置支付相关的 URLTypes<br>
 b.添加支付相关的白名单<br>
 
 <key>LSApplicationQueriesSchemes</key>
-<array>
+<array><br>
     <string>alipayqr</string>
     <string>alipay</string>
     <string>alipayshare</string>
