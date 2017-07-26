@@ -4,18 +4,31 @@
 二.开发环境搭建<br>
 1.build Setting设置<br>
 1.1、Bitcode设置 不支持Bitcode,在工程中将Enable Bitcode 设为 No.<br>
+<br>
 ![](https://github.com/qq5/qq5_game_skd_iOS/blob/master/images/Bitcode.png)
+<br>
 1.2 设置Other Linker Flags<br>
 支付SDK中有使用到Category，所以请在工程中设置Other Linker Flags包含-ObjC，否则会造成运行时无法加载Category中方法的崩溃问题.<br>
-
-
-
-
+<br>
+<br>
+![](https://github.com/qq5/qq5_game_skd_iOS/blob/master/images/Flags.png)
+<br>
+<br>
 1.3 info设置<br>
 1.3.1、相册权限设置<br>
+<br>
+<br>
+![](https://github.com/qq5/qq5_game_skd_iOS/blob/master/images/相册权限.png)
+<br>
+<br>
 1.3.2、支付相关设置<br>
 a.配置支付相关的 URLTypes<br>
 
+<br>
+<br>
+![](https://github.com/qq5/qq5_game_skd_iOS/blob/master/images/支付.png)
+<br>
+<br>
 
 b.添加支付相关的白名单<br>
 
@@ -29,12 +42,11 @@ b.添加支付相关的白名单<br>
     <string>wechat</string>
 </array><br>
 
-
-
-
-
-
-
+<br>
+<br>
+![](https://github.com/qq5/qq5_game_skd_iOS/blob/master/images/白名单.png)
+<br>
+<br>
 
 1.3.3 、添加SDK文件<br>
 a、添加QQ5SDK和第三方文件<br>
