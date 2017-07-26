@@ -4,7 +4,7 @@
 二.开发环境搭建<br>
 1.build Setting设置<br>
 1.1、Bitcode设置 不支持Bitcode,在工程中将Enable Bitcode 设为 No.<br>
-
+![](https://github.com/qq5/qq5_game_skd_iOS/blob/master/images/Bitcode.png)
 1.2 设置Other Linker Flags<br>
 支付SDK中有使用到Category，所以请在工程中设置Other Linker Flags包含-ObjC，否则会造成运行时无法加载Category中方法的崩溃问题.<br>
 
