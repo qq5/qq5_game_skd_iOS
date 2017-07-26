@@ -30,15 +30,15 @@ a.配置支付相关的 URLTypes<br>
 <br>
 b.添加支付相关的白名单<br>
 
-//<key>LSApplicationQueriesSchemes</key>
-//<array><br>
-//    <string>alipayqr</string>
- //   <string>alipay</string>
- //   <string>alipayshare</string>
- //   <string>alipays</string>
-  //  <string>weixin</string>
- //   <string>wechat</string>
-//</array><br>
+<key>LSApplicationQueriesSchemes</key>
+<array><br>
+    <string>alipayqr</string>
+    <string>alipay</string>
+    <string>alipayshare</string>
+    <string>alipays</string>
+    <string>weixin</string>
+    <string>wechat</string>
+</array><br>
 <br>
 <br>
 ![](https://github.com/qq5/qq5_game_skd_iOS/blob/master/images/白名单.png)
