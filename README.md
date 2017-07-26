@@ -32,28 +32,25 @@
 ```
 ![](https://github.com/qq5/qq5_game_skd_iOS/blob/master/images/白名单.png)
 
-1.3.3 、添加SDK文件<br>
-a、添加QQ5SDK和第三方文件<br>
-添加SDK和Lib下所有文件<br>
-b、添加依赖的系统库<br>
-CoreTelephony.framework、CoreMotion.framework、libz.tbd、libsqlite3.tbd、libc++.tbd、<br>
-<br>
-<br>
+#### 1.3.3 、添加SDK文件
+##### a、添加QQ5SDK和第三方文件
+添加SDK和Lib下所有文件
+##### b、添加依赖的系统库
+CoreTelephony.framework、CoreMotion.framework、libz.tbd、libsqlite3.tbd、libc++.tbd、
 ![](https://github.com/qq5/qq5_game_skd_iOS/blob/master/images/framework.png)
-<br>
-<br>
-1.3.4、在AppDelegate里添加：<br>
-\- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window{<br>
-    
+
+#### 1.3.4、在AppDelegate里添加：
+```
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window{
     return UIInterfaceOrientationMaskAll;
-}<br>
+}
+```
 
+摇一摇相关代码：
+```
+- (void) motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event
 
-
-摇一摇相关代码：<br>
-\- (void) motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event<br>
-
-{<br>
+{
     
     //检测到摇动开始
     
@@ -61,21 +58,21 @@ CoreTelephony.framework、CoreMotion.framework、libz.tbd、libsqlite3.tbd、lib
         
     }
     
-}<br>
+}
 
-\- (void) motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event<br>
+- (void) motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event
 
-{<br>
+{
     
     //摇动取消
     
-}<br>
+}
 
-\- (void) motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event<br>
+- (void) motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event<br>
 
-{<br>
+{
     
-    //摇动结束<br>
+    //摇动结束
     
     if (event.subtype == UIEventSubtypeMotionShake) {
         
@@ -83,7 +80,8 @@ CoreTelephony.framework、CoreMotion.framework、libz.tbd、libsqlite3.tbd、lib
         
     }
     
-}<br>
+}
+```
 
 三、启动SDK<br>
 1、设置SDK信息<br>
