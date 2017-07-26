@@ -23,13 +23,11 @@
 <br>
 1.3.2、支付相关设置<br>
 a.配置支付相关的 URLTypes<br>
-
 <br>
 <br>
 ![](https://github.com/qq5/qq5_game_skd_iOS/blob/master/images/pay.png)
 <br>
 <br>
-
 b.添加支付相关的白名单<br>
 
 <key>LSApplicationQueriesSchemes</key>
@@ -41,13 +39,11 @@ b.添加支付相关的白名单<br>
     <string>weixin</string>
     <string>wechat</string>
 </array><br>
-
 <br>
 <br>
 ![](https://github.com/qq5/qq5_game_skd_iOS/blob/master/images/白名单.png)
 <br>
 <br>
-
 1.3.3 、添加SDK文件<br>
 a、添加QQ5SDK和第三方文件<br>
 添加SDK和Lib下所有文件<br>
