@@ -114,7 +114,7 @@ CoreTelephony.framework、CoreMotion.framework、libz.tbd、libsqlite3.tbd、lib
 (void)startSDKLoginCallBlock:(void(^)(id data))block;<br>
 接入示例：<br>
 
-        [[QQ5SDK shareInstance] startSDKLoginCallBlock:^(id data) {<br>
+        [[QQ5SDK shareInstance] startSDKLoginCallBlock:^(id data) {
             NSLog(@"%@",data);
 
 
@@ -130,7 +130,7 @@ CoreTelephony.framework、CoreMotion.framework、libz.tbd、libsqlite3.tbd、lib
  * @param enterGameCallBack 进入游戏回调接口<br>
  
  */<br>
-(void)enterGameRoleId:(NSString *)roleId roleName:(NSString *)roleName roleLevel:(NSString *)roleLevel serverId:(NSString *)serverId serverName:(NSString *)serverName enterGameCallBack:(void (^)(id data))block;<br>
+(void)enterGameRoleId:(NSString *)roleId roleName:(NSString *)roleName roleLevel:(NSString *)roleLevel serverId:(NSString *)serverId serverName:(NSString *)serverName enterGameCallBack:(void (^)(id data))block;
 接入示例：<br>
         [[QQ5SDK shareInstance]enterGameRoleId:@"123" roleName:@"123" roleLevel:@"123" serverId:@"123" serverName:@"123" enterGameCallBack:^(id data) {
 
@@ -155,8 +155,8 @@ CoreTelephony.framework、CoreMotion.framework、libz.tbd、libsqlite3.tbd、lib
 
 接入示例：<br>
 
-        [[QQ5SDK shareInstance]resetMenuView:NO];<br>
-        NSDate *date = [NSDate date];<br>
+        [[QQ5SDK shareInstance]resetMenuView:NO];
+        NSDate *date = [NSDate date];
         [[QQ5SDK shareInstance] initUserPayViewAmout:@"6" gameCoin:@"600" gameCoinName:@"金币" gameOrderId:[NSString stringWithFormat:@"%f_",[date timeIntervalSince1970]] extra:@"dasfdjaslkfjdsaklfjdslakf" withProductId:@"com.qq5SDK.num1" payCallBack:^(id data) {
 
         }];
