@@ -26,7 +26,7 @@ a.配置支付相关的 URLTypes<br>
 
 <br>
 <br>
-![](https://github.com/qq5/qq5_game_skd_iOS/blob/master/images/支付.png)
+![](https://github.com/qq5/qq5_game_skd_iOS/blob/master/images/pay.png)
 <br>
 <br>
 
@@ -53,7 +53,11 @@ a、添加QQ5SDK和第三方文件<br>
 添加SDK和Lib下所有文件<br>
 b、添加依赖的系统库<br>
 CoreTelephony.framework、CoreMotion.framework、libz.tbd、libsqlite3.tbd、libc++.tbd、<br>
-
+<br>
+<br>
+![](https://github.com/qq5/qq5_game_skd_iOS/blob/master/images/framework.png)
+<br>
+<br>
 1.3.4、在AppDelegate里添加：<br>
 - (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window{<br>
     
