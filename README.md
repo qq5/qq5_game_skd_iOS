@@ -55,7 +55,7 @@ CoreTelephony.framework、CoreMotion.framework、libz.tbd、libsqlite3.tbd、lib
 <br>
 <br>
 1.3.4、在AppDelegate里添加：<br>
-- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window{<br>
+\- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window{<br>
     
     return UIInterfaceOrientationMaskAll;
 }<br>
@@ -63,7 +63,7 @@ CoreTelephony.framework、CoreMotion.framework、libz.tbd、libsqlite3.tbd、lib
 
 
 摇一摇相关代码：<br>
-- (void) motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event<br>
+\- (void) motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event<br>
 
 {<br>
     
@@ -75,7 +75,7 @@ CoreTelephony.framework、CoreMotion.framework、libz.tbd、libsqlite3.tbd、lib
     
 }<br>
 
-- (void) motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event<br>
+\- (void) motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event<br>
 
 {<br>
     
@@ -83,7 +83,7 @@ CoreTelephony.framework、CoreMotion.framework、libz.tbd、libsqlite3.tbd、lib
     
 }<br>
 
-- (void) motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event<br>
+\- (void) motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event<br>
 
 {<br>
     
@@ -99,14 +99,14 @@ CoreTelephony.framework、CoreMotion.framework、libz.tbd、libsqlite3.tbd、lib
 
 三、启动SDK<br>
 1、设置SDK信息<br>
-/*<br>
+\/\*<br>
  初始化<br>
- * @param appId 在QQ5游戏中心申请的appId<br>
- * @param appKey 在QQ5游戏中心申请的appKey<br>
- * @param gameChannel 在QQ5游戏的渠道号<br>
- */<br>
+ \* @param appId 在QQ5游戏中心申请的appId<br>
+ \* @param appKey 在QQ5游戏中心申请的appKey<br>
+ \* @param gameChannel 在QQ5游戏的渠道号<br>
+ \*\/<br>
 
-- (void)initSDKWithAppId:(NSString *)appId<br>
+\- (void)initSDKWithAppId:(NSString *)appId<br>
               WithAppKey:(NSString *)appKey<br>
              gameChannel:(NSString *)gameChannel<br>
            loginCallBack:(void(^)(id data))block;<br>
@@ -118,11 +118,11 @@ CoreTelephony.framework、CoreMotion.framework、libz.tbd、libsqlite3.tbd、lib
     }];
 
 2、<br>
-/*<br>
+\/\*<br>
  用户登录<br>
- * @param block 登录完毕回调接口<br>
+ \* @param block 登录完毕回调接口<br>
  
- */<br>
+ \*\/<br>
 (void)startSDKLoginCallBlock:(void(^)(id data))block;<br>
 接入示例：<br>
 
@@ -132,17 +132,17 @@ CoreTelephony.framework、CoreMotion.framework、libz.tbd、libsqlite3.tbd、lib
 
         }];
 
-3、/*<br>
+3、\/\*<br>
  进入游戏<br>
- * @param roleId 游戏角色id<br>
- * @param roleName 游戏角色名称<br>
- * @param roleLevel 游戏角色等级<br>
- * @param serverId 服务器id<br>
- * @param serverName 服务器名称<br>
- * @param enterGameCallBack 进入游戏回调接口<br>
+ \* @param roleId 游戏角色id<br>
+ \* @param roleName 游戏角色名称<br>
+ \* @param roleLevel 游戏角色等级<br>
+ \* @param serverId 服务器id<br>
+ \* @param serverName 服务器名称<br>
+ \* @param enterGameCallBack 进入游戏回调接口<br>
  
- */<br>
-(void)enterGameRoleId:(NSString *)roleId roleName:(NSString *)roleName roleLevel:(NSString *)roleLevel serverId:(NSString *)serverId serverName:(NSString *)serverName enterGameCallBack:(void (^)(id data))block;
+ \*\/<br>
+\-(void)enterGameRoleId:(NSString *)roleId roleName:(NSString *)roleName roleLevel:(NSString *)roleLevel serverId:(NSString *)serverId serverName:(NSString *)serverName enterGameCallBack:(void (^)(id data))block;
 接入示例：<br>
         [[QQ5SDK shareInstance]enterGameRoleId:@"123" roleName:@"123" roleLevel:@"123" serverId:@"123" serverName:@"123" enterGameCallBack:^(id data) {
 
@@ -150,20 +150,20 @@ CoreTelephony.framework、CoreMotion.framework、libz.tbd、libsqlite3.tbd、lib
         }];
 
 4、<br>
-/*<br>
+\/\*<br>
  支付接口（必接）<br>
- * 拉起支付界面，注册支付回调监听器。<br>
- * @param amout 充值金额须大于0.1，支持一位小数（单位：元）<br>
- * @param gameCoin 游戏币数量(1)<br>
- * @param gameCoinName 游戏币名称<br>
- * @param gameOrderId 游戏订单id<br>
- * @param extra 透传字段（SDK服务端回调原样返回）<br>
- * @param productId 内购产品Id<br>
- * @param payCallBack 支付回调接口<br>
- */<br>
+ \* 拉起支付界面，注册支付回调监听器。<br>
+ \* @param amout 充值金额须大于0.1，支持一位小数（单位：元）<br>
+ \* @param gameCoin 游戏币数量(1)<br>
+ \* @param gameCoinName 游戏币名称<br>
+ \* @param gameOrderId 游戏订单id<br>
+ \* @param extra 透传字段（SDK服务端回调原样返回）<br>
+ \* @param productId 内购产品Id<br>
+ \* @param payCallBack 支付回调接口<br>
+ \*\/<br>
 
 
--(void)initUserPayViewAmout:(NSString *)amout gameCoin:(NSString *)gameCoin gameCoinName:(NSString *)gameCoinName gameOrderId:(NSString *)gameOrderId extra:(NSString *)extra withProductId:(NSString *)productId payCallBack:(void (^)(id data))block;
+\-(void)initUserPayViewAmout:(NSString *)amout gameCoin:(NSString *)gameCoin gameCoinName:(NSString *)gameCoinName gameOrderId:(NSString *)gameOrderId extra:(NSString *)extra withProductId:(NSString *)productId payCallBack:(void (^)(id data))block;
 
 接入示例：<br>
 
