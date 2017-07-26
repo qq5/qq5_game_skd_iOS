@@ -6,11 +6,9 @@
 ## 1.build Setting设置
 ### 1.1、Bitcode设置 不支持Bitcode,在工程中将Enable Bitcode 设为 No.
 ![](https://github.com/qq5/qq5_game_skd_iOS/blob/master/images/Bitcode.png)
-### 1.2 设置Other Linker Flags<br>
+### 1.2 设置Other Linker Flags
 支付SDK中有使用到Category，所以请在工程中设置Other Linker Flags包含-ObjC，否则会造成运行时无法加载Category中方法的崩溃问题.
-
 ![](https://github.com/qq5/qq5_game_skd_iOS/blob/master/images/Flags.png)
-
 ### 1.3 info设置
 #### 1.3.1、相册权限设置
 ![](https://github.com/qq5/qq5_game_skd_iOS/blob/master/images/相册权限.png)
@@ -86,11 +84,11 @@ CoreTelephony.framework、CoreMotion.framework、libz.tbd、libsqlite3.tbd、lib
 # 三、启动SDK
 ## 1、设置SDK信息
 ```
-/*<br>
- 初始化<br>
- * @param appId 在QQ5游戏中心申请的appId<br>
- * @param appKey 在QQ5游戏中心申请的appKey<br>
- * @param gameChannel 在QQ5游戏的渠道号<br>
+/*
+ 初始化
+ * @param appId 在QQ5游戏中心申请的appId
+ * @param appKey 在QQ5游戏中心申请的appKey
+ * @param gameChannel 在QQ5游戏的渠道号
  */
 
 - (void)initSDKWithAppId:(NSString *)appId
@@ -98,11 +96,9 @@ CoreTelephony.framework、CoreMotion.framework、libz.tbd、libsqlite3.tbd、lib
              gameChannel:(NSString *)gameChannel
            loginCallBack:(void(^)(id data))block;
 接入示例：
+[[QQ5SDK shareInstance] initSDKWithAppId:@"1" WithAppKey:@"H0ndi0tBTq" gameChannel:@"1_1" loginCallBack:^(id data) {
 
-    [[QQ5SDK shareInstance] initSDKWithAppId:@"1" WithAppKey:@"H0ndi0tBTq" gameChannel:@"1_1" loginCallBack:^(id data) {
-        
-
-    }];
+}];
 ```
 ## 2、用户登录
 ```
@@ -113,16 +109,14 @@ CoreTelephony.framework、CoreMotion.framework、libz.tbd、libsqlite3.tbd、lib
  */
 -(void)startSDKLoginCallBlock:(void(^)(id data))block;
 接入示例：
-
-        [[QQ5SDK shareInstance] startSDKLoginCallBlock:^(id data) {
-            NSLog(@"%@",data);
+[[QQ5SDK shareInstance] startSDKLoginCallBlock:^(id data) {
 
 
-        }];
+}];
 ```
 ## 3、进入游戏
 ```
-\*
+/*
  进入游戏
  * @param roleId 游戏角色id
  * @param roleName 游戏角色名称
@@ -134,10 +128,9 @@ CoreTelephony.framework、CoreMotion.framework、libz.tbd、libsqlite3.tbd、lib
  */
 -(void)enterGameRoleId:(NSString *)roleId roleName:(NSString *)roleName roleLevel:(NSString *)roleLevel serverId:(NSString *)serverId serverName:(NSString *)serverName enterGameCallBack:(void (^)(id data))block;
 接入示例：
-        [[QQ5SDK shareInstance]enterGameRoleId:@"123" roleName:@"123" roleLevel:@"123" serverId:@"123" serverName:@"123" enterGameCallBack:^(id data) {
+[[QQ5SDK shareInstance]enterGameRoleId:@"123" roleName:@"123" roleLevel:@"123" serverId:@"123" serverName:@"123" enterGameCallBack:^(id data) {
 
-
-        }];
+}];
 ```
 ## 4、支付接口（必接）
 
