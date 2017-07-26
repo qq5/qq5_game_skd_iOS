@@ -1,49 +1,41 @@
-# qq5_game_skd_iOS
-一.配置要求<br>
-支持iOS8.0及以上版本<br>
-二.开发环境搭建<br>
-1.build Setting设置<br>
-1.1、Bitcode设置 不支持Bitcode,在工程中将Enable Bitcode 设为 No.<br>
-<br>
+
+# 一.配置要求
+支持iOS8.0及以上版本
+
+# 二.开发环境搭建 
+## 1.build Setting设置
+### 1.1、Bitcode设置 不支持Bitcode,在工程中将Enable Bitcode 设为 No.
 ![](https://github.com/qq5/qq5_game_skd_iOS/blob/master/images/Bitcode.png)
-<br>
-1.2 设置Other Linker Flags<br>
-支付SDK中有使用到Category，所以请在工程中设置Other Linker Flags包含-ObjC，否则会造成运行时无法加载Category中方法的崩溃问题.<br>
-<br>
-<br>
+### 1.2 设置Other Linker Flags<br>
+支付SDK中有使用到Category，所以请在工程中设置Other Linker Flags包含-ObjC，否则会造成运行时无法加载Category中方法的崩溃问题.
+
 ![](https://github.com/qq5/qq5_game_skd_iOS/blob/master/images/Flags.png)
-<br>
-<br>
-1.3 info设置<br>
-1.3.1、相册权限设置<br>
-<br>
-<br>
+
+### 1.3 info设置
+#### 1.3.1、相册权限设置
+
 ![](https://github.com/qq5/qq5_game_skd_iOS/blob/master/images/相册权限.png)
-<br>
-<br>
-1.3.2、支付相关设置<br>
-a.配置支付相关的 URLTypes<br>
+
+#### 1.3.2、支付相关设置
+##### a.配置支付相关的 URLTypes
 <br>
 <br>
 ![](https://github.com/qq5/qq5_game_skd_iOS/blob/master/images/pay.png)
 <br>
 <br>
 b.添加支付相关的白名单<br>
+```<key>LSApplicationQueriesSchemes</key>
+<array>
+    <string>alipayqr</string>
+    <string>alipay</string>
+    <string>alipayshare</string>
+    <string>alipays</string>
+    <string>weixin</string>
+    <string>wechat</string>
+</array>```
 
-\<key\>LSApplicationQueriesSchemes\<\/key\>
-\<array\><br>
-    \<string\>alipayqr\<\/string\><br>
-    \<string\>alipay\<\/string\><br>
-    \<string\>alipayshare\<\/string\><br>
-    \<string\>alipays\<\/string\><br>
-    \<string\>weixin\<\/string\><br>
-    \<string\>wechat\<\/string\><br>
-\<\/array\><br>
-<br>
-<br>
 ![](https://github.com/qq5/qq5_game_skd_iOS/blob/master/images/白名单.png)
-<br>
-<br>
+
 1.3.3 、添加SDK文件<br>
 a、添加QQ5SDK和第三方文件<br>
 添加SDK和Lib下所有文件<br>
