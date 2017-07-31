@@ -1,6 +1,6 @@
 //
 //  JNetResponse.h
-//  HeepaySourceDemo
+
 //
 //  Created by 降瑞雪 on 2017/4/5.
 //  Copyright © 2017年 HuiYuan.NET. All rights reserved.

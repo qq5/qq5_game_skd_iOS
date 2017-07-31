@@ -23,16 +23,33 @@
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
 			<string>weixin</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.qq5SDK.ios</string>
+			</array>
 		</dict>
 		<dict>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
 			<string>alipay</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.qq5SDK.ios</string>
+			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>alipayqr</string>
+		<string>alipay</string>
+		<string>alipayshare</string>
+		<string>alipays</string>
+		<string>weixin</string>
+		<string>wechat</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
