@@ -9,12 +9,12 @@
 #import <Foundation/Foundation.h>
 
 typedef NS_ENUM(NSInteger, QQ5SDKResult) {
-    QQ5SDKResultSuccess          = 0,    // 成功
-    QQ5SDKResultFail             = 1,   // 失败
-    QQ5SDKResultDealing          = 2,    //处理中
-    QQ5SDKResultCancel           = 3,   //取消
-    QQ5SDKResultError            = 4,   // 用户录入信息有误、等一般性错误，
-    QQ5SDKResultUnknown          = 5    //获取支付结果失败，当出现这种状态时，需要商户APP主动向商户服务器发起查询请求。
+    QQ5SDKResultSuccess          = 0,     // 成功
+    QQ5SDKResultFail             = 1,     // 失败
+    QQ5SDKResultDealing          = 2,     //处理中
+    QQ5SDKResultCancel           = 3,     //取消
+    QQ5SDKResultError            = 4,     // 用户录入信息有误、等一般性错误，
+    QQ5SDKResultUnknown          = 5      //获取支付结果失败，当出现这种状态时，需要商户APP主动向商户服务器发起查询请求。
 } ;
 typedef void(^loginSuccessBlock)(NSDictionary *data);
 
