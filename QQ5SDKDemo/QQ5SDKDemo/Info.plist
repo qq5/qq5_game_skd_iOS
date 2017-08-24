@@ -25,7 +25,7 @@
 			<string>weixin</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.qq5SDK.ios</string>
+				<string>comqq5SDKios</string>
 			</array>
 		</dict>
 		<dict>
@@ -35,7 +35,7 @@
 			<string>alipay</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.qq5SDK.ios</string>
+				<string>comqq5SDKios</string>
 			</array>
 		</dict>
 	</array>

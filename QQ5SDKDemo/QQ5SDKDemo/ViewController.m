@@ -92,7 +92,7 @@
         }];
     }else if (sender.tag == 5){
         NSDate *date = [NSDate date];
-        [[QQ5SDK shareInstance] initUserPayViewAmout:@"6" gameCoin:@"600" gameCoinName:@"金币" gameOrderId:[NSString stringWithFormat:@"%f_",[date timeIntervalSince1970]] extra:@"dasfdjaslkfjdsaklfjdslakf" withProductId:@"com.qq5SDK.num1" payCallBack:^(id data) {
+        [[QQ5SDK shareInstance] initUserPayViewAmout:@"0.01" gameCoin:@"600" gameCoinName:@"金币" gameOrderId:[NSString stringWithFormat:@"%f_",[date timeIntervalSince1970]] extra:@"dasfdjaslkfjdsaklfjdslakf" withProductId:@"com.qq5SDK.num1" payCallBack:^(id data) {
             NSLog(@"%@",data);
         }];
     }else if (sender.tag == 3){
