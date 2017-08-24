@@ -15,6 +15,7 @@
 
 #### 1.3.2、支付相关设置
 ##### a.配置支付相关的 URLTypes
+URL Schemes 在QQ5游戏中心设置的ios_scheme值
 ![](https://github.com/qq5/qq5_game_skd_iOS/blob/master/images/pay.png)
 #### b.添加支付相关的白名单
 ```
@@ -32,7 +33,7 @@
 
 #### 1.3.3 、添加SDK文件
 ##### a、添加QQ5SDK和第三方文件
-添加SDK和Lib下所有文件
+添加SDK和Lib下所有文件,如果是非ARC项目，在Build Phases ——> Compile Sources下的相关文件添加 -fobjc-arc
 ##### b、添加依赖的系统库
 CoreTelephony.framework、CoreMotion.framework、libz.tbd、libsqlite3.tbd、libc++.tbd、
 ![](https://github.com/qq5/qq5_game_skd_iOS/blob/master/images/framework.png)
