@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "JNetManager.h"
 
 @interface AppDelegate ()
 
@@ -14,7 +15,17 @@
 
 @implementation AppDelegate
 
+//iOS9 之后使用这个回调方法。
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options
+{
+    return [JNetManager application:app openURL:url];
+}
 
+//iOS9 之前使用这个回调方法。
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(nullable NSString *)sourceApplication annotation:(id)annotation
+{
+    return [JNetManager application:application openURL:url];
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     return YES;
