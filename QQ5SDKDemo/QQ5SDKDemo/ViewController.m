@@ -31,6 +31,7 @@
         
         self.enterGame.enabled = YES;
     }];
+    [QQ5SDK shareInstance].paymentCount = 3;//设置苹果支付次数
     
     UIButton *autoLoginBtn = [UIButton buttonWithType:UIButtonTypeSystem];
     autoLoginBtn.frame = CGRectMake(50, 50, 80, 50);
@@ -78,6 +79,12 @@
     changeBtn.tag = 10;
     [changeBtn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:changeBtn];
+    UIButton *clear = [UIButton buttonWithType:UIButtonTypeSystem];
+    clear.frame = CGRectMake(50, 300, 150, 50);
+    [clear setTitle:@"删除苹果支付记录" forState:UIControlStateNormal];
+    clear.tag = 11;
+    [clear addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:clear];
 }
 - (void)btnAction:(UIButton *)sender
 {
@@ -105,6 +112,8 @@
             
             self.enterGame.enabled = YES;
         }];
+    }else if (sender.tag == 11){
+        [QQ5SDK shareInstance].clearCount = YES;
     }
 }
 - (BOOL)shouldAutorotate{
