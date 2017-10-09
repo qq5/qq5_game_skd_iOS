@@ -69,13 +69,22 @@ typedef void(^loginSuccessBlock)(NSDictionary *data);
 
 
 -(void)initUserPayViewAmout:(NSString *)amout gameCoin:(NSString *)gameCoin gameCoinName:(NSString *)gameCoinName gameOrderId:(NSString *)gameOrderId extra:(NSString *)extra withProductId:(NSString *)productId payCallBack:(void (^)(id data))block;
+/*
+ 内购接口（必接）
+ * @param gameOrderId 游戏订单id
+ * @param productId 内购产品Id
+ * @param payCallBack 支付回调接口
+ */
+
+
+-(void)initUserPayViewGameOrderId:(NSString *)gameOrderId withProductId:(NSString *)productId payCallBack:(void (^)(id data))block;
 /**
  设置isHorizontal 是否横屏显示 默认值为YES
  */
 @property (nonatomic, assign) BOOL isHorizontal;
 @property (nonatomic, assign) BOOL isAutoLogin;
 @property (nonatomic, assign) NSInteger paymentCount;//苹果支付次数设置
-@property (nonatomic, assign) BOOL clearCount;//删除苹果支付记录
+@property (nonatomic, assign) BOOL clearCount;//清除苹果支付记录
 
 - (void)resetMenuView:(BOOL)type;
 @end

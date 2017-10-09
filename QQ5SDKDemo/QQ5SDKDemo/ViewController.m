@@ -31,7 +31,8 @@
         
         self.enterGame.enabled = YES;
     }];
-    [QQ5SDK shareInstance].paymentCount = 3;//设置苹果支付次数
+    [QQ5SDK shareInstance].paymentCount = HUGE_VALF;/*设置苹果支付次数 （支付时设调用函数
+   -(void)initUserPayViewGameOrderId:(NSString *)gameOrderId withProductId:(NSString *)productId payCallBack:(void (^)(id data))block;）可不设置paymentCount的值*/
     
     UIButton *autoLoginBtn = [UIButton buttonWithType:UIButtonTypeSystem];
     autoLoginBtn.frame = CGRectMake(50, 50, 80, 50);
@@ -99,9 +100,15 @@
         }];
     }else if (sender.tag == 5){
         NSDate *date = [NSDate date];
-        [[QQ5SDK shareInstance] initUserPayViewAmout:@"0.01" gameCoin:@"600" gameCoinName:@"金币" gameOrderId:[NSString stringWithFormat:@"%f_",[date timeIntervalSince1970]] extra:@"dasfdjaslkfjdsaklfjdslakf" withProductId:@"com.qq5SDK.num1" payCallBack:^(id data) {
+        //只提供内购
+        [[QQ5SDK shareInstance] initUserPayViewGameOrderId:[NSString stringWithFormat:@"%f_",[date timeIntervalSince1970]] withProductId:@"com.qq5SDK.num1" payCallBack:^(id data) {
+            
             NSLog(@"%@",data);
         }];
+        //内购+第三方支付（内购次数 [QQ5SDK shareInstance].paymentCount = ？）
+//        [[QQ5SDK shareInstance] initUserPayViewAmout:@"0.01" gameCoin:@"600" gameCoinName:@"金币" gameOrderId:[NSString stringWithFormat:@"%f_",[date timeIntervalSince1970]] extra:@"dasfdjaslkfjdsaklfjdslakf" withProductId:@"com.qq5SDK.num1" payCallBack:^(id data) {
+//            NSLog(@"%@",data);
+//        }];
     }else if (sender.tag == 3){
         sender.selected = !sender.selected;
         [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:sender.selected] forKey:@"isAutoLogin"];
