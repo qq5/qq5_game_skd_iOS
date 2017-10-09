@@ -148,14 +148,33 @@ CoreTelephony.framework、CoreMotion.framework、libz.tbd、libsqlite3.tbd、lib
  * @param payCallBack 支付回调接口
  */
 
+ [QQ5SDK shareInstance].paymentCount = HUGE_VALF;/*设置苹果支付次数 （支付时设调用函数
+ -(void)initUserPayViewGameOrderId:(NSString *)gameOrderId withProductId:(NSString *)productId payCallBack:(void (^)(id data))block;）可不设置paymentCount的值*/
 
+//内购+第三方支付（内购次数 [QQ5SDK shareInstance].paymentCount = ？）
 -(void)initUserPayViewAmout:(NSString *)amout gameCoin:(NSString *)gameCoin gameCoinName:(NSString *)gameCoinName gameOrderId:(NSString *)gameOrderId extra:(NSString *)extra withProductId:(NSString *)productId payCallBack:(void (^)(id data))block;
 
 接入示例：
 
- [[QQ5SDK shareInstance]resetMenuView:NO];
  NSDate *date = [NSDate date];
  [[QQ5SDK shareInstance] initUserPayViewAmout:@"6" gameCoin:@"600" gameCoinName:@"金币" gameOrderId:[NSString stringWithFormat:@"%f_",[date timeIntervalSince1970]] extra:@"dasfdjaslkfjdsaklfjdslakf" withProductId:@"com.qq5SDK.num1" payCallBack:^(id data) {
  
  }];
+ ```
+ ```
+/*
+ 内购接口（必接）
+ * @param gameOrderId 游戏订单id
+ * @param productId 内购产品Id
+ * @param payCallBack 支付回调接口
+ */
+
+
+-(void)initUserPayViewGameOrderId:(NSString *)gameOrderId withProductId:(NSString *)productId payCallBack:(void (^)(id data))block;
+接入示例：
+//只提供内购
+        [[QQ5SDK shareInstance] initUserPayViewGameOrderId:[NSString stringWithFormat:@"%f_",[date timeIntervalSince1970]] withProductId:@"com.qq5SDK.num1" payCallBack:^(id data) {
+            
+            NSLog(@"%@",data);
+        }];
  ```
