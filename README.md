@@ -137,7 +137,7 @@ CoreTelephony.framework、CoreMotion.framework、libz.tbd、libsqlite3.tbd、lib
 
 ```
 /*
- 支付接口（必接）
+ 支付接口
  * 拉起支付界面，注册支付回调监听器。
  * @param amout 充值金额须大于0.1，支持一位小数（单位：元）
  * @param gameCoin 游戏币数量(1)
@@ -163,7 +163,7 @@ CoreTelephony.framework、CoreMotion.framework、libz.tbd、libsqlite3.tbd、lib
  ```
  ```
 /*
- 内购接口（必接）
+ 内购接口
  * @param gameOrderId 游戏订单id
  * @param productId 内购产品Id
  * @param payCallBack 支付回调接口
@@ -172,9 +172,10 @@ CoreTelephony.framework、CoreMotion.framework、libz.tbd、libsqlite3.tbd、lib
 
 -(void)initUserPayViewGameOrderId:(NSString *)gameOrderId withProductId:(NSString *)productId payCallBack:(void (^)(id data))block;
 接入示例：
-//只提供内购
-        [[QQ5SDK shareInstance] initUserPayViewGameOrderId:[NSString stringWithFormat:@"%f_",[date timeIntervalSince1970]] withProductId:@"com.qq5SDK.num1" payCallBack:^(id data) {
+//内购 不需要设置内购次数 [QQ5SDK shareInstance].paymentCount = ？
+ [[QQ5SDK shareInstance] initUserPayViewGameOrderId:[NSString stringWithFormat:@"%f_",[date timeIntervalSince1970]] withProductId:@"com.qq5SDK.num1" payCallBack:^(id data) {
             
-            NSLog(@"%@",data);
-        }];
+ NSLog(@"%@",data);
+
+ }];
  ```
