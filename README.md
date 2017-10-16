@@ -136,6 +136,7 @@ CoreTelephony.framework、CoreMotion.framework、libz.tbd、libsqlite3.tbd、lib
 ## 4、支付接口（必接）
 
 ```
+paymentCount //苹果支付次数设置，1、只有调用“支付接口（内购+第三方支付）”才需要设置； 2、调用“获取内购次数”后不需要设置；3、
 /*
  支付接口
  * 拉起支付界面，注册支付回调监听器。
@@ -147,17 +148,14 @@ CoreTelephony.framework、CoreMotion.framework、libz.tbd、libsqlite3.tbd、lib
  * @param productId 内购产品Id
  * @param payCallBack 支付回调接口
  */
-
- [QQ5SDK shareInstance].paymentCount = HUGE_VALF;/*设置苹果支付次数 （支付时设调用函数
- -(void)initUserPayViewGameOrderId:(NSString *)gameOrderId withProductId:(NSString *)productId payCallBack:(void (^)(id data))block;）可不设置paymentCount的值*/
+ 
 
 //内购+第三方支付（内购次数 [QQ5SDK shareInstance].paymentCount = ？）
 -(void)initUserPayViewAmout:(NSString *)amout gameCoin:(NSString *)gameCoin gameCoinName:(NSString *)gameCoinName gameOrderId:(NSString *)gameOrderId extra:(NSString *)extra withProductId:(NSString *)productId payCallBack:(void (^)(id data))block;
 
 接入示例：
-
- NSDate *date = [NSDate date];
- [[QQ5SDK shareInstance] initUserPayViewAmout:@"6" gameCoin:@"600" gameCoinName:@"金币" gameOrderId:[NSString stringWithFormat:@"%f_",[date timeIntervalSince1970]] extra:@"dasfdjaslkfjdsaklfjdslakf" withProductId:@"com.qq5SDK.num1" payCallBack:^(id data) {
+NSDate *date = [NSDate date];
+[[QQ5SDK shareInstance] initUserPayViewAmout:@"6" gameCoin:@"600" gameCoinName:@"金币" gameOrderId:[NSString stringWithFormat:@"%f_",[date timeIntervalSince1970]] extra:@"dasfdjaslkfjdsaklfjdslakf" withProductId:@"com.qq5SDK.num1" payCallBack:^(id data) {
  
  }];
  ```
@@ -172,10 +170,29 @@ CoreTelephony.framework、CoreMotion.framework、libz.tbd、libsqlite3.tbd、lib
 
 -(void)initUserPayViewGameOrderId:(NSString *)gameOrderId withProductId:(NSString *)productId payCallBack:(void (^)(id data))block;
 接入示例：
-//内购 不需要设置内购次数 [QQ5SDK shareInstance].paymentCount = ？
  [[QQ5SDK shareInstance] initUserPayViewGameOrderId:[NSString stringWithFormat:@"%f_",[date timeIntervalSince1970]] withProductId:@"com.qq5SDK.num1" payCallBack:^(id data) {
             
  NSLog(@"%@",data);
 
  }];
+ 
+ 
+/*
+ 第三方支付
+ * 拉起支付界面，注册支付回调监听器。
+ * @param amout 充值金额须大于0.1，支持一位小数（单位：元）
+ * @param gameCoin 游戏币数量(1)
+ * @param gameCoinName 游戏币名称
+ * @param gameOrderId 游戏订单id
+ * @param extra 透传字段（SDK服务端回调原样返回）
+ * @param payCallBack 支付回调接口
+ */
+-(void)initUserPayViewAmout:(NSString *)amout gameCoin:(NSString *)gameCoin gameCoinName:(NSString *)gameCoinName gameOrderId:(NSString *)gameOrderId extra:(NSString *)extra payCallBack:(void (^)(id data))block;
+
+接入示例：
+//第三方支付
+[[QQ5SDK shareInstance]initUserPayViewAmout:@"0.01" gameCoin:@"600" gameCoinName:@"金币" gameOrderId:[NSString stringWithFormat:@"%f_",[date timeIntervalSince1970]] extra:@"dasfdjaslkfjdsaklfjdslakf" payCallBack:^(id data) {
+        
+}];
+
  ```
