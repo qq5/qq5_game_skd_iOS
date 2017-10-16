@@ -56,7 +56,7 @@ typedef void(^loginSuccessBlock)(NSDictionary *data);
  */
 - (void)enterGameRoleId:(NSString *)roleId roleName:(NSString *)roleName roleLevel:(NSString *)roleLevel serverId:(NSString *)serverId serverName:(NSString *)serverName enterGameCallBack:(void (^)(id data))block;
 /*
- 支付接口（必接）
+ 支付接口
  * 拉起支付界面，注册支付回调监听器。
  * @param amout 充值金额须大于0.1，支持一位小数（单位：元）
  * @param gameCoin 游戏币数量(1)
@@ -70,7 +70,7 @@ typedef void(^loginSuccessBlock)(NSDictionary *data);
 
 -(void)initUserPayViewAmout:(NSString *)amout gameCoin:(NSString *)gameCoin gameCoinName:(NSString *)gameCoinName gameOrderId:(NSString *)gameOrderId extra:(NSString *)extra withProductId:(NSString *)productId payCallBack:(void (^)(id data))block;
 /*
- 内购接口（必接）
+ 内购接口
  * @param gameOrderId 游戏订单id
  * @param productId 内购产品Id
  * @param payCallBack 支付回调接口
@@ -78,12 +78,27 @@ typedef void(^loginSuccessBlock)(NSDictionary *data);
 
 
 -(void)initUserPayViewGameOrderId:(NSString *)gameOrderId withProductId:(NSString *)productId payCallBack:(void (^)(id data))block;
+/*
+ 第三方支付
+ * 拉起支付界面，注册支付回调监听器。
+ * @param amout 充值金额须大于0.1，支持一位小数（单位：元）
+ * @param gameCoin 游戏币数量(1)
+ * @param gameCoinName 游戏币名称
+ * @param gameOrderId 游戏订单id
+ * @param extra 透传字段（SDK服务端回调原样返回）
+ * @param payCallBack 支付回调接口
+ */
+-(void)initUserPayViewAmout:(NSString *)amout gameCoin:(NSString *)gameCoin gameCoinName:(NSString *)gameCoinName gameOrderId:(NSString *)gameOrderId extra:(NSString *)extra payCallBack:(void (^)(id data))block;
+
+
+/*获取内购次数*/
+- (void)initUserPayTimesBlock:(void (^)(id data))block;
 /**
  设置isHorizontal 是否横屏显示 默认值为YES
  */
 @property (nonatomic, assign) BOOL isHorizontal;
 @property (nonatomic, assign) BOOL isAutoLogin;
-@property (nonatomic, assign) NSInteger paymentCount;//苹果支付次数设置
+@property (nonatomic, assign) NSInteger paymentCount;//苹果支付次数设置，1、只有调用“支付接口（内购+第三方支付）”才需要设置 2、调用“获取内购次数”后不需要设置
 @property (nonatomic, assign) BOOL clearCount;//清除苹果支付记录
 
 - (void)resetMenuView:(BOOL)type;

@@ -27,12 +27,11 @@
     //appkey 现网 H0ndi0tBTq
     //在QQ5游戏中心申请的appId
     //在QQ5游戏中心申请的appKey
-    [[QQ5SDK shareInstance] initSDKWithAppId:@"1" WithAppKey:@"H0ndi0tBTq" gameChannel:@"1_1" loginCallBack:^(id data) {
+    [[QQ5SDK shareInstance] initSDKWithAppId:@"1" WithAppKey:@"111" gameChannel:@"1_1" loginCallBack:^(id data) {
         
         self.enterGame.enabled = YES;
     }];
-    [QQ5SDK shareInstance].paymentCount = HUGE_VALF;/*设置苹果支付次数 （支付时设调用函数
-   -(void)initUserPayViewGameOrderId:(NSString *)gameOrderId withProductId:(NSString *)productId payCallBack:(void (^)(id data))block;）可不设置paymentCount的值*/
+    //    [QQ5SDK shareInstance].paymentCount = HUGE_VALF;
     
     UIButton *autoLoginBtn = [UIButton buttonWithType:UIButtonTypeSystem];
     autoLoginBtn.frame = CGRectMake(50, 50, 80, 50);
@@ -93,6 +92,9 @@
         [[QQ5SDK shareInstance] startSDKLoginCallBlock:^(id data) {
             NSLog(@"%@",data);
             self.enterGame.enabled = YES;
+            [[QQ5SDK shareInstance] initUserPayTimesBlock:^(id data) {
+                NSLog(@"%@",data);
+            }];
         }];
     }else if (sender.tag == 2){
         [[QQ5SDK shareInstance]enterGameRoleId:@"123" roleName:@"123" roleLevel:@"123" serverId:@"123" serverName:@"123" enterGameCallBack:^(id data) {
@@ -101,14 +103,13 @@
     }else if (sender.tag == 5){
         NSDate *date = [NSDate date];
         //只提供内购
-        [[QQ5SDK shareInstance] initUserPayViewGameOrderId:[NSString stringWithFormat:@"%f_",[date timeIntervalSince1970]] withProductId:@"com.qq5SDK.num1" payCallBack:^(id data) {
-            
-            NSLog(@"%@",data);
-        }];
-        //内购+第三方支付（内购次数 [QQ5SDK shareInstance].paymentCount = ？）
-//        [[QQ5SDK shareInstance] initUserPayViewAmout:@"0.01" gameCoin:@"600" gameCoinName:@"金币" gameOrderId:[NSString stringWithFormat:@"%f_",[date timeIntervalSince1970]] extra:@"dasfdjaslkfjdsaklfjdslakf" withProductId:@"com.qq5SDK.num1" payCallBack:^(id data) {
+//        [[QQ5SDK shareInstance] initUserPayViewGameOrderId:[NSString stringWithFormat:@"%f_",[date timeIntervalSince1970]] withProductId:@"com.qq5SDK.num1" payCallBack:^(id data) {
+//            
 //            NSLog(@"%@",data);
 //        }];
+        [[QQ5SDK shareInstance] initUserPayViewAmout:@"0.01" gameCoin:@"600" gameCoinName:@"金币" gameOrderId:[NSString stringWithFormat:@"%f_",[date timeIntervalSince1970]] extra:@"dasfdjaslkfjdsaklfjdslakf" withProductId:@"com.qq5SDK.num1" payCallBack:^(id data) {
+            NSLog(@"%@",data);
+        }];
     }else if (sender.tag == 3){
         sender.selected = !sender.selected;
         [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:sender.selected] forKey:@"isAutoLogin"];
