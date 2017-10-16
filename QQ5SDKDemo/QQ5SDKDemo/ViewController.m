@@ -27,7 +27,7 @@
     //appkey 现网 H0ndi0tBTq
     //在QQ5游戏中心申请的appId
     //在QQ5游戏中心申请的appKey
-    [[QQ5SDK shareInstance] initSDKWithAppId:@"1" WithAppKey:@"111" gameChannel:@"1_1" loginCallBack:^(id data) {
+    [[QQ5SDK shareInstance] initSDKWithAppId:@"1" WithAppKey:@"H0ndi0tBTq" gameChannel:@"1_1" loginCallBack:^(id data) {
         
         self.enterGame.enabled = YES;
     }];
@@ -107,6 +107,11 @@
 //            
 //            NSLog(@"%@",data);
 //        }];
+//        第三方支付
+//        [[QQ5SDK shareInstance]initUserPayViewAmout:@"0.01" gameCoin:@"600" gameCoinName:@"金币" gameOrderId:[NSString stringWithFormat:@"%f_",[date timeIntervalSince1970]] extra:@"dasfdjaslkfjdsaklfjdslakf" payCallBack:^(id data) {
+//        
+//        }];
+    //内购+第三方支付
         [[QQ5SDK shareInstance] initUserPayViewAmout:@"0.01" gameCoin:@"600" gameCoinName:@"金币" gameOrderId:[NSString stringWithFormat:@"%f_",[date timeIntervalSince1970]] extra:@"dasfdjaslkfjdsaklfjdslakf" withProductId:@"com.qq5SDK.num1" payCallBack:^(id data) {
             NSLog(@"%@",data);
         }];
